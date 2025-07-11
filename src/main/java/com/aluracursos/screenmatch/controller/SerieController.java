@@ -1,4 +1,5 @@
 package com.aluracursos.screenmatch.controller;
+
 import com.aluracursos.screenmatch.dto.EpisodioDTO;
 import com.aluracursos.screenmatch.dto.SerieDTO;
 import com.aluracursos.screenmatch.service.SerieService;
@@ -24,14 +25,16 @@ public class SerieController {
 
     }
 
-    @GetMapping ("/top5")
+    @GetMapping("/top5")
     public List<SerieDTO> obtenerTop5() {
         return servicio.obtenerTop5();
     }
+
     @GetMapping("/lanzamientos")
-    public List<SerieDTO> obtenerLanzamientosMasReciente (){
-       return servicio.ObtenerLanzamientosMasRecientes();
+    public List<SerieDTO> obtenerLanzamientosMasReciente() {
+        return servicio.ObtenerLanzamientosMasRecientes();
     }
+
     //se mapea la serie que se quiere ver con unos parametro dinamicos
     @GetMapping("/{id}")
     public SerieDTO obtenerPorId(@PathVariable long id) {
@@ -39,10 +42,19 @@ public class SerieController {
 
     }
 
-    @GetMapping ("{id}/temporadas/todas")
-    public List<EpisodioDTO> obtenerTodasLasTemporadas(@PathVariable long id){
+    @GetMapping("{id}/temporadas/todas")
+    public List<EpisodioDTO> obtenerTodasLasTemporadas(@PathVariable long id) {
         return servicio.ObtenerTodasLasTemporadas(id);
     }
 
+    @GetMapping("/{id}/temporadas/{numeroTemporada}")
+    public List<EpisodioDTO> obtenerTemporadaPorNumero(@PathVariable long id,
+                                                       @PathVariable long numeroTemporada) {
+        return servicio.ObtenerTemporadasPorNumero(id, numeroTemporada);
+    }
 
+    @GetMapping("/categoria/{nombreGenero}")
+    public List<SerieDTO> obtenerSeriesPorCategoria(@PathVariable String nombreGenero) {
+        return servicio.obtenerSeriesPorCategoria(nombreGenero);
+    }
 }
