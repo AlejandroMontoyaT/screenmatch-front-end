@@ -1,14 +1,26 @@
+![Programação-Consolidando los conocimientos](https://github.com/genesysR-dev/java-persistencia-de-datos-y-consultas-con-spring-data-jpa/assets/91544872/f80133d4-945e-4302-a87c-17396777ceaf)
 
-# ScreenMatch
+# Front-end de la aplicación: Frases clásicas de películas y series ScreenMatch
 
-Proyecto desarrollado durante el segundo curso de la formación Avanzando con Java
+Esta es la interfaz de usuario de la aplicación que se utilizará en el desafío propuesto en la última clase del curso.
 
-## 🔨 Objetivos del proyecto
+Para visualizarla, después de descargar o clonar el proyecto, ábrela con VS Code.
 
-* Avanzar en el proyecto Screenmatch, iniciado en el primer curso de la formación, creando un menú con varias opciones;
-* Modelar las abstracciones de la aplicación a través de clases, enums, atributos y métodos;
-* Consumir la API del ChatGPT(Opcional;
-* Utilizar Spring Data JPA para persistir datos en la base de datos;
-* Conocer varios tipos de bases de datos y utilizar PostgreSQL;
-* Trabajar con varios tipos de consultas a la base de datos;
-* Profundizar en la interfaz JPA Repository.
+Si no lo tienes, instala la extensión *Live Server*.
+
+Una vez hecho esto, haz clic con el botón derecho en el archivo **index.html** y elige "Abrir con Live Server".
+
+Inicialmente, si tu API aún no está desarrollada, el contenido que verás será el siguiente:
+
+
+![generador-de-frases-base-imagen](https://cdn1.gnarususercontent.com.br/6/103811/d428ddb0-1561-46b0-8843-079ce6759c03.png)
+
+
+Después de completar el desafío, tu proyecto estará completo y la aplicación mostrará los datos, de manera similar a lo siguiente:
+
+
+![generador-de-frases-final-imagen](https://github.com/genesysR-dev/java-persistencia-de-datos-y-consultas-con-spring-data-jpa/assets/91544872/bbda09ca-8279-4d8a-953c-412535014210)
+
+
+
+# ¡Buena suerte!
